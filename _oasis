@@ -1,0 +1,19 @@
+Name: ola
+Version: 0.0.0
+Synopsis: OCaml linear algebra experiments
+Authors: Jeff Hammerbacher <jeff.hammerbacher@gmail.com>
+License: LGPL with OCaml linking exception
+
+Description: OCaml linear algebra experiments
+Homepage: https://github.com/hammer/ola
+
+OASISFormat: 0.4
+BuildTools: ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+
+Executable "ola"
+  Path: .
+  MainIs: ola.ml
+  CompiledObject: best
+  BuildDepends:
+    lacaml
